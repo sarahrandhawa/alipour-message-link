@@ -1,0 +1,31 @@
+{
+  "name": "alipour-message-link",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarahrandhawa/alipour-message-link.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sarahrandhawa/alipour-message-link/issues"
+  },
+  "homepage": "https://github.com/sarahrandhawa/alipour-message-link#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.6"
+  },
+  "devDependencies": {
+    "jest": "^30.5.1"
+  }
+}
