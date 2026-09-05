@@ -1,10 +1,10 @@
-jest.mock('../functions/lib/mailer.private', () => ({
+jest.mock('../assets/mailer.private', () => ({
   sendEmail: jest.fn()
 }));
 
-const mailer = require('../functions/lib/mailer.private');
+const mailer = require('../assets/mailer.private');
 const mailerPath = require.resolve(
-  '../functions/lib/mailer.private'
+  '../assets/mailer.private'
 );
 
 class MockResponse {

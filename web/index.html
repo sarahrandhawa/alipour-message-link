@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Message Dr. Alipour</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <section class="instructions">
+            <header>
+                <p class="eyebrow">Contact</p>
+
+                <h1>Message Dr. Alipour</h1>
+
+                <p>
+                    Send a short message by text or through the form below.
+                </p>
+            </header>
+
+            <a id="smsLink" class="text-button" href="#">
+                Send a text
+            </a>
+        </section>
+
+        <section class="web-form">
+            <p class="divider">or use the form</p>
+
+            <form id="messageForm">
+                <div class="form-field">
+                    <label for="name">
+                        Name (optional)
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        maxlength="80"
+                        autocomplete="name"
+                        placeholder="Your name"
+                    >
+                </div>
+
+                <div class="form-field">
+                    <label for="phone">
+                        Phone number (optional)
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        maxlength="20"
+                        autocomplete="tel"
+                        placeholder="555-555-5555"
+                    >
+                </div>
+
+                <div class="form-field">
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        minlength="2"
+                        maxlength="500"
+                        placeholder="Your message here..."
+                        required
+                    ></textarea>
+
+                    <p class="field-help">
+                        Maximum 500 characters.
+                    </p>
+                </div>
+
+                <div class="website-field" aria-hidden="true">
+                    <label for="website">Website</label>
+
+                    <input
+                        type="text"
+                        id="website"
+                        name="website"
+                        tabindex="-1"
+                        autocomplete="off"
+                    >
+                </div>
+
+                <button type="submit" id="sendBtn">
+                    Send message
+                </button>
+
+                <p
+                    id="status"
+                    role="status"
+                    aria-live="polite"
+                ></p>
+            </form>
+        </section>
+
+        <section class="notice">
+            <p>
+                Please do not include medical or personal health
+                information. For urgent matters, call the office.
+            </p>
+        </section>
+    </main>
+</body>
+</html>

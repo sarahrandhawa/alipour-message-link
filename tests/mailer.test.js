@@ -1,6 +1,6 @@
 const {
   formatEmail
-} = require('../functions/lib/mailer.private');
+} = require('../assets/mailer.private');
 
 describe('formatEmail', () => {
   test('formats an SMS message with the sender number', () => {

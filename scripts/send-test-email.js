@@ -1,6 +1,6 @@
 const {
   sendEmail
-} = require('../functions/lib/mailer.private');
+} = require('../assets/mailer.private');
 
 const requiredVariables = [
   'SENDGRID_API_KEY',
