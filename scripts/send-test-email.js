@@ -1,37 +1,20 @@
-const {
-  sendEmail
-} = require('../assets/mailer.private');
 
-const requiredVariables = [
-  'SENDGRID_API_KEY',
-  'FROM_EMAIL',
-  'DEST_EMAIL'
-];
+const { sendEmail } = require('../assets/mailer.private');
 
-const missingVariables = requiredVariables.filter(
-  variable => !process.env[variable]
-);
+async function main() {
+  try {
+    await sendEmail(process.env, {
+      from: '+15555550123',
+      name: 'Test Patient',
+      body: 'This is a synthetic TUMA Gmail API test message.',
+      channel: 'TEST'
+    });
 
-if (missingVariables.length > 0) {
-  console.error(
-    `Missing environment variables: ${missingVariables.join(', ')}`
-  );
-  process.exit(1);
+    console.log('Gmail test sent successfully.');
+  } catch (error) {
+    console.error('Gmail test failed:', error.message);
+    process.exit(1);
+  }
 }
 
-sendEmail(process.env, {
-  from: 'browser-demo',
-  name: 'Sarah',
-  body: 'This is a development test from Alipour Message Link.',
-  channel: 'WEB'
-})
-  .then(() => {
-    console.log('Test email sent successfully.');
-  })
-  .catch(error => {
-    console.error(
-      'SendGrid error:',
-      error.response?.body || error.message
-    );
-    process.exit(1);
-  });
+main();

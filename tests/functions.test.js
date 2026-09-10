@@ -122,7 +122,7 @@ describe('web-message handler', () => {
       .mockImplementation(() => {});
 
     mailer.sendEmail.mockRejectedValue(
-      new Error('SendGrid unavailable')
+      new Error('Email unavailable')
     );
 
     const response = await invokeWebMessage({
@@ -243,7 +243,7 @@ describe('incoming-sms handler', () => {
       .mockImplementation(() => {});
 
     mailer.sendEmail.mockRejectedValue(
-      new Error('SendGrid unavailable')
+      new Error('Email unavailable')
     );
 
     const response = await invokeIncomingSms({

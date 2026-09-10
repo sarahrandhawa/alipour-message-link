@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/sarahrandhawa/alipour-message-link#readme",
   "dependencies": {
-    "@sendgrid/mail": "^8.1.6"
+    "google-auth-library": "^11.0.2"
   },
   "devDependencies": {
     "jest": "^30.5.1"

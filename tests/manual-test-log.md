@@ -3,7 +3,7 @@
 ## Environment
 - Environment: Development
 - Backend: Twilio Serverless
-- Email delivery: SendGrid
+- Email delivery: Gmail API / Google Workspace
 - Frontend: Local development server
 - Automated test suite: Jest
 

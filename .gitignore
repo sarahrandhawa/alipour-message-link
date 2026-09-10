@@ -1,3 +1,5 @@
 .env
 node_modules/
 .twiliodeployinfo
+assets/google-service-account.private.json
+.env.twilio

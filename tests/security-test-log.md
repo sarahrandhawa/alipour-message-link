@@ -5,7 +5,7 @@
 - Application: Twilio Unified Message App (TUMA)
 - Environment: Development
 - Backend: Twilio Serverless
-- Email delivery: SendGrid
+- Email delivery: Google API / Google Workspace
 - Frontend: Local development environment
 
 ## Security Test Results
